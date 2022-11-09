@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>axios</title>
+</head>
+
+<body>
+    <header>
+        <div class="container my-5">
+            <div class="text-center">
+                <h1 class="display-4 text-center mb-3">Axios </h1>
+                <button class="btn btn-primary my-3" id="get" onClick={getTodo}>GET</button>
+                <button class="btn btn-info" id="post" onClick={addTodo}>POST</button>
+                <button class="btn btn-warning" id="update" onClick={updateTodo}>PUT/PATCH</button>
+                <button class="btn btn-danger" id="delete" onClick={removeTodo}>DELETE</button>
+                <button class="btn btn-secondary" id="sim" onClick={getData}>Sim Requests</button>
+                <button class="btn btn-secondary" id="headers">
+                    Custom Headers
+                </button>
+                <button class="btn btn-secondary" id="transform">
+                    Transform
+                </button>
+                <button class="btn btn-secondary" id="error">
+                    Error Handling
+                </button>
+
+            </div>
+            <hr />
+            <div id="res"></div>
+            <br />
+            <div class="card-body text-center">
+                <h1>Created by Omar Othman</h1>
+            </div>
+        </div>
+
+
+    </header>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
